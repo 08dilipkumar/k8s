@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: phpmyadmin-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: phpmyadmin-pod
+  template:
+    metadata:
+      labels:
+        app: phpmyadmin-pod
+    spec:
+      containers:
+        - name: phpmyadmin
+          image: phpmyadmin:latest
+          envFrom:
+            - configMapRef:
+                name: phpmyadmin-config
+            - secretRef:
+                name: phpmyadmin-secret
+          ports:
+            - containerPort: 80
+
