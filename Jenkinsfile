@@ -9,7 +9,7 @@ pipeline {
         } 
         stage('DEPLOY') {
             steps {
-                sh 'cp main.php /var/www/html'
+                sh 'scp index.php root@172.17.0.2:/var/www/html'
             }
         }
     }
