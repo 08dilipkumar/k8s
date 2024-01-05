@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('CLONE') {
             steps {
-                git branch: 'main', url: 'https://github.com/08dilipkumar/php.git'
+                git branch: 'main', url: 'https://github.com/08dilipkumar/k8s.git'
             }
         } 
         stage('DEPLOY') {
