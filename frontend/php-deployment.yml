@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: myphp
-          image: 07dilip/php5:5
+          image: 07dilip/php7:7
           ports:
             - containerPort: 80
 

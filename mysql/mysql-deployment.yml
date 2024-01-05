@@ -19,7 +19,7 @@ spec:
             - configMapRef:
                 name: mysql-config
             - secretRef:
-                name: mysql-secret
+                name: mysql-secret 
           ports:
             - containerPort: 3306
 

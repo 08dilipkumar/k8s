@@ -65,7 +65,7 @@
 
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $servername = "10.43.74.179"; 
+    $servername = "10.43.181.36"; 
     $username = "root";
     $password = "root-password";
     $dbname = "sampledb";
